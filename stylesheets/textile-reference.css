@@ -1,0 +1,32 @@
+/* Text */
+
+body, input, textarea, select {
+  color: #222;
+  font: 10pt "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6em;
+}
+
+/* Links */
+
+a {
+  text-decoration:none;
+}
+
+  a:link, a:visited {
+    color: #0086ff;
+  }
+  
+  a:hover {
+    color: #ff5c07;
+  }
+  
+  a:active {
+    color: #910;
+  }
+  
+  a img {
+    border-style: none;
+  }
