@@ -1,0 +1,112 @@
+/* General */
+
+body, input, textarea, select {
+  color: #222;
+  font: 9pt Verdana, Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6em;
+}
+
+/* Layout */
+
+#nav {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+  #nav li {
+    font-weight: bold;
+  }
+  
+  #nav a {
+    font-weight: normal;
+  }
+
+/* Headings */
+
+h1, h2 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+/* Lists */
+
+ul, ol {
+  margin: 0;
+  padding-left: 1em;
+}
+
+/* Links */
+
+a {
+  text-decoration:none;
+}
+
+  a:link, a:visited {
+    color: #5cacda;
+  }
+  
+  a:hover {
+    color: #ff5c07;
+  }
+  
+  a:active {
+    color: #910;
+  }
+  
+  a img {
+    border-style: none;
+  }
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  td, th {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    width: 50%;
+  }
+  
+  
+  th {
+    background-color: #eee;
+    text-align: left;
+  }
+  
+  tr.alternate {
+    background-color: #f9f9f9;
+  }
+
+/* Forms */
+
+form {
+  border-top: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* Special */
+
+.section-name {
+  color: #7f94d9;
+  display: block;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 2em;
+}

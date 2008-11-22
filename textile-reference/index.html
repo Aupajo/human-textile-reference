@@ -1,15 +1,116 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>Textile Reference</title>
+    <title>How To Use Textile</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/textile-reference.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/textile-reference.css" />
+    <script type="text/javascript" src="javascripts/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="javascripts/guide.js"></script>
   </head>
   <body>
     
-    <h1>Textile Reference</h1>
+    <h1>How To Use Textile</h1>
     
+    <p>Textile is a quick and simple way to format your text.</p>
     
+    <h2 class="section-name">Basic Formatting</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>This text is *bold*.</td>
+          <td>This text is <strong>bold</strong>.</td>
+        </tr>
+        <tr class="alternate">
+          <td>This text is **emphasised**.</td>
+          <td>This text is <em>emphasised<em>.</td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Lists and Tables</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>
+            * Milk<br />
+            * Bread<br />
+            * Cheese<br />
+            ** Cheddar<br />
+            ** Camembert<br />
+            * Rice
+          </td>
+          <td>
+            <ul>
+              <li>Milk</li>
+              <li>Bread</li>
+              <li>Cheese
+                <ul>
+                  <li>Cheddar</li>
+                  <li>Camembert</li>
+                </ul>
+              </li>
+              <li>Rice</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="alternate">
+          <td>
+            # Milk<br />
+            # Bread<br />
+            # Cheese<br />
+            ## Cheddar<br />
+            ## Camembert<br />
+            # Rice
+          </td>
+          <td>
+            <ol>
+              <li>Milk</li>
+              <li>Bread</li>
+              <li>Cheese
+                <ol>
+                  <li>Cheddar</li>
+                  <li>Camembert</li>
+                </ol>
+              </li>
+              <li>Rice</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Special Characters</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>RoboCorp 3000(TM)</td>
+          <td>RoboCorp&#8482;</td>
+        </tr>
+        <tr class="alternate">
+          <td>Coca-Cola(R)</td>
+          <td>Coca-Cola&#174;</td>
+        </tr>
+        <tr>
+          <td>Awesome(C)</td>
+          <td>Awesome&#169;</td>
+        </tr>
+      </table>
+    </div>
     
   </body>
 </html>
