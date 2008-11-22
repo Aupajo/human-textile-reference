@@ -61,7 +61,7 @@
         }
         
         .value {
-          color: #9aa7bb;
+          color: #456cb7;
         }
         
         .contents {
@@ -91,9 +91,11 @@
     
     <p>Copy the <code class="directory">textile-reference/</code> directory to your project.</p>
     
-    <p>Include a quick help link to the reference:</p>
+    <p>Include a quick help link to the reference.</p>
     
-    <h2>Code</h2>
+    <h2>Code Snippets</h2>
+    
+    <h3>HTML</h3>
     
     <code class="example">
       You can format your text using<br />
@@ -102,7 +104,19 @@
         <span class="attribute">onclick=</span><span class="value">"window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1'); return false;"&gt;</span></span><span class="contents">Textile</span><span class="tag">&lt;/a&gt;</span>.
     </code>
     
-    <h2>Example</h2>
+    <h3>Rails</h3>
+    
+    <code class="example">
+      You can format your text using<br />
+      <span class="tag">&lt;%= link_to <span class="attribute">'Textile'</span>,
+      <span class="attribute">'textile-reference/index.html'</span>,
+      <span class="attribute">:popup =&gt;</span>
+      [<span class="value">'textile_reference'</span>,
+      <span class="value">'height=400,width=600,scrollbars=1'</span>]
+      %&gt;</span>
+    </code>
+    
+    <h3>Snippet Output</h3>
     
     <div class="example">
       You can format your text using <a href="textile-reference/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1');return false;">Textile</a>.
