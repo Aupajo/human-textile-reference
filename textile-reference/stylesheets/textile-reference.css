@@ -9,21 +9,11 @@ body {
   line-height: 1.6em;
 }
 
-/* Layout */
+/* Formatting */
 
-#nav {
-  list-style-type: none;
-  margin: 1em 0;
-  padding: 0;
+p {
+  margin-top: 0;
 }
-
-  #nav li {
-    font-weight: bold;
-  }
-  
-  #nav a {
-    font-weight: normal;
-  }
 
 /* Headings */
 
