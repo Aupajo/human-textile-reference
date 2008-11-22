@@ -8,7 +8,7 @@
         
         body {
           color: #333;
-          font: 10pt Georgia, serif;
+          font: 10pt/1.6em Georgia, serif;
           margin: 1em auto;
           width: 740px;
         }
@@ -35,16 +35,21 @@
           margin-top: 0;
         }
         
-        code, #example {
+        code {
+          font: 0.9em Monaco, Courier, monospace;
+        }
+        
+        .example {
           background-color: #fffebd;
           border: 1px solid #ffda78;
+          display: block;
           padding: 1em;
           margin-bottom: 2em;
         }
         
-        code {
-          display: block;
-          font-family: Monaco, Courier, monospace;
+        .directory {
+          background-color: #eef;
+          padding: 0.2em;
         }
         
         .tag {
@@ -82,23 +87,25 @@
     
     <h1>Usage Example</h1>
     
-    <p>
-      Just include a quick help link to the reference.
-    </p>
+    <h2>Instructions</h2>
+    
+    <p>Copy the <code class="directory">textile-reference/</code> directory to your project.</p>
+    
+    <p>Include a quick help link to the reference:</p>
     
     <h2>Code</h2>
     
-    <code>
+    <code class="example">
       You can format your text using<br />
       <span class="tag">&lt;a
         <span class="attribute">href=</span><span class="value">"textile-reference/index.html"</span>
-        <span class="attribute">onclick=</span><span class="value">"window.open(this.href,'textile-reference','height=400,width=400');return false;"&gt;</span></span><span class="contents">Textile</span><span class="tag">&lt;/a&gt;</span>.
+        <span class="attribute">onclick=</span><span class="value">"window.open(this.href,'textile_reference','height=400,width=600'); return false;"&gt;</span></span><span class="contents">Textile</span><span class="tag">&lt;/a&gt;</span>.
     </code>
     
     <h2>Example</h2>
     
-    <div id="example">
-      You can format your text using <a href="textile-reference/index.html" onclick="window.open(this.href,'textile-reference','height=400,width=400');return false;">Textile</a>.
+    <div class="example">
+      You can format your text using <a href="textile-reference/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600');return false;">Textile</a>.
     </div>
     
     <p id="shameless">
