@@ -11,7 +11,7 @@
     
     <h1 id="title">Textile Guide</h1>
     
-    <h2 class="section-name">Basic Formatting</h2>
+    <h2 class="section-name">Text</h2>
     
     <div class="section">
       <table>
@@ -20,32 +20,22 @@
           <th>Result</th>
         </tr>
         <tr>
-          <td>
-            <p>One paragraph.</p>
-            <p>Two paragraphs.</p>
-          </td>
-          <td>
-            <p>One paragraph.</p>
-            <p>Two paragraphs.</p>
-          </td>
-        </tr>
-        <tr class="alternate">
           <td>This text is *bold*.</td>
           <td>This text is <strong>bold</strong>.</td>
         </tr>
-        <tr>
+        <tr class="alternate">
           <td>This text is _emphasised_.</td>
           <td>This text is <em>emphasised<em>.</td>
         </tr>
-        <tr class="alternate">
+        <tr>
           <td>I think +not+.</td>
           <td>I think <ins>not</ins>.</td>
         </tr>
-        <tr>
+        <tr class="alternate">
           <td>I like the -blue- red one.</td>
           <td>I like the <del>blue</del> red one.</td>
         </tr>
-        <tr class="alternate">
+        <tr>
           <td>Link to "Google":http://google.com.</td>
           <td>Link to <a href="http://google.com">Google</a>.</td>
         </tr>
@@ -109,6 +99,63 @@
       </table>
     </div>
     
+    <h2 class="section-name">Tables</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>
+            | Bill | 23 | Male |<br />
+            | Sally | 19 | Female |
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>Bill</td>
+                <td>23</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Sally</td>
+                <td>19</td>
+                <td>Female</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="alternate">
+          <td>
+            |._ Name |._ Age |._ Gender |<br />
+            | Bill | 23 | Male |<br />
+            | Sally | 19 | Female |
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+              </tr>
+              <tr>
+                <td>Bill</td>
+                <td>23</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Sally</td>
+                <td>19</td>
+                <td>Female</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
     <h2 class="section-name">Special Characters</h2>
     
     <div class="section">
@@ -118,7 +165,7 @@
           <th>Result</th>
         </tr>
         <tr>
-          <td>RoboCorp 3000(TM)</td>
+          <td>RoboCorp(TM)</td>
           <td>RoboCorp&#8482;</td>
         </tr>
         <tr class="alternate">
