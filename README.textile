@@ -14,6 +14,6 @@ Add a help link to the reference:
 <code>
 You can format your text using 
 <a href="textile-reference/index.html"
-   onclick="window.open(this.href,'textile_reference','height=400,width=600'); return false;">Textile</a>.
+   onclick="window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1'); return false;">Textile</a>.
 </code>
 </pre>
