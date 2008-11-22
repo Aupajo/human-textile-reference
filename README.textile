@@ -10,6 +10,9 @@ Copy the @textile-reference/@ directory to your project.
 
 Add a help link to the reference:
 
+<pre>
 <code>
-You can format your text using <a href="textile-reference/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600');return false;">Textile</a>.
+You can format your text using 
+<a href="textile-reference/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600');return false;">Textile</a>.
 </code>
+</pre>
