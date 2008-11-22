@@ -2,11 +2,13 @@
 
 body, input, textarea, select {
   color: #222;
-  font: 9pt Verdana, Arial, sans-serif;
+  font: 9pt "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, sans-serif;
 }
 
 body {
+  background-color: #d1d7e2;
   line-height: 1.6em;
+  margin: 0;
 }
 
 /* Formatting */
@@ -17,16 +19,13 @@ p {
 
 /* Headings */
 
-h1, h2 {
-  font-family: Georgia, serif;
-}
-
 h1 {
   font-size: 1.6em;
 }
 
 h2 {
   font-size: 1.4em;
+  margin: 0;
 }
 
 /* Lists */
@@ -61,24 +60,26 @@ a {
 /* Tables */
 
 table {
+  border-top: 1px solid #fff;
   border-collapse: collapse;
   width: 100%;
 }
 
   td, th {
-    border-bottom: 1px solid #ccc;
-    padding: 0.5em 1em;
+    border-left: 1px solid #d9d9d9;
+    padding: 5px 10px;
     width: 50%;
   }
   
   
   th {
     background-color: #eee;
+    border-bottom: 1px solid #d9d9d9;
     text-align: left;
   }
   
   tr.alternate {
-    background-color: #f9f9f9;
+    background-color: #f1f5fa;
   }
 
 /* Forms */
@@ -91,12 +92,25 @@ form {
 
 /* Special */
 
+#title {
+  color: #444;
+  margin: 0;
+  padding: 5px 10px;
+}
+
 .section-name {
-  color: #7f94d9;
-  display: block;
+  color: #525252;
   cursor: pointer;
+  display: block;
+  font-size: 1em;
+  padding: 5px 10px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
 }
 
 .section {
-  margin-bottom: 2em;
+  border-color: #b8bdc7;
+  border-style: solid;
+  border-width: 1px 0;
+  background-color: white;
 }
