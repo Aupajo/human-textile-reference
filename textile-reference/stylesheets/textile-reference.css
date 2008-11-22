@@ -37,25 +37,21 @@ ul, ol {
 
 /* Links */
 
-a {
-  text-decoration:none;
+a:link, a:visited {
+  color: #376bd5;
 }
 
-  a:link, a:visited {
-    color: #5cacda;
-  }
-  
-  a:hover {
-    color: #ff5c07;
-  }
-  
-  a:active {
-    color: #910;
-  }
-  
-  a img {
-    border-style: none;
-  }
+a:hover {
+  color: #ff5c07;
+}
+
+a:active {
+  color: #910;
+}
+
+a img {
+  border-style: none;
+}
 
 /* Tables */
 
@@ -100,13 +96,18 @@ form {
 }
 
 .section-name {
+  background: url('../images/arrow_down.gif') no-repeat center left;
   color: #525252;
   cursor: pointer;
   display: block;
   font-size: 1em;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 16px;
   text-shadow: 0 1px 0 #fff;
   text-transform: uppercase;
+}
+
+.deselected {
+  background-image: url('../images/arrow_right.gif');
 }
 
 .section {

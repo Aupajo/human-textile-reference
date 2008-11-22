@@ -1,13 +1,16 @@
 $(window).ready(function() {
-  $('.section').each(function(i) {
-    if(i > 0) {
-      $(this).hide();
+  $('.section-name').each(function(i) {
+    if(i > 0){
+      toggleSection(i);
     }
-  });
-  
-  $('h2').each(function(i) {
+    
     $(this).click(function() {
-      $('.section').slice(i, i + 1).toggle();
+      toggleSection(i)
     });
   });
 });
+
+function toggleSection(i) {
+  $('.section').slice(i, i + 1).toggle();
+  $('.section-name').slice(i, i + 1).toggleClass('deselected');
+}
