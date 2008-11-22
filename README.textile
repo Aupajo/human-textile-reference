@@ -2,6 +2,8 @@ h1. Human Textile Reference
 
 The Human Textile Reference is a set of short, easy to understand HTML pages you can include in any project that uses Textile.
 
+*Important:* It's not designed to be a complete reference. Just a quick guide for the layman.
+
 It's perfect for including as a pop-up help window next to your textarea.
 
 h2. How To Use
