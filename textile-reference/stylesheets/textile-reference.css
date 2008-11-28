@@ -19,13 +19,20 @@ p {
 
 /* Headings */
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 h1 {
   font-size: 1.6em;
 }
 
 h2 {
   font-size: 1.4em;
-  margin: 0;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 /* Lists */
@@ -101,10 +108,11 @@ form {
 /* Special */
 
 #title {
+  background-color: #a1adcb;
+  border-bottom: 1px solid #b8bdc7;
   color: #444;
-  margin: 0;
-  padding: 5px 10px;
-  text-shadow: 0 1px 0 #fff;
+  padding: 10px 10px;
+  text-shadow: 0px 1px 0px #cdd9fd;
 }
 
 .section-name {
