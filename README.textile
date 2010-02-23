@@ -2,11 +2,15 @@ h1. Human Textile Reference
 
 The Human Textile Reference is a set of short, easy to understand HTML pages you can include in any project that uses Textile.
 
+You can view a demo on the "labs page":http://labs.metanation.com/human-textile-reference/.
+
 *Important:* It's not designed to be a complete reference. Just a quick guide for the layman.
 
 It's perfect for including as a pop-up help window next to your textarea.
 
 h2. How To Use
+
+Clone the repository or "download":http://github.com/Aupajo/human-textile-reference/downloads.
 
 Copy the @textile-reference/@ directory to your project.
 
