@@ -2,11 +2,28 @@ h1. Human Textile Reference
 
 The Human Textile Reference is a set of short, easy to understand HTML pages you can include in any project that uses Textile.
 
+*Important:* This is not designed to be a complete reference. Just a quick guide for the layman.
+
 You can view a demo on the "labs page":http://labs.metanation.com/human-textile-reference/.
 
-*Important:* It's not designed to be a complete reference. Just a quick guide for the layman.
-
 It's perfect for including as a pop-up help window next to your textarea.
+
+h2. Notes
+
+h3. JavaScript
+
+The guide uses JavaScript to toggle the different categories. If the browser's JavaScript is disabled, every category will be shown expanded, which is fine.
+
+h3. Sass
+Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.css@. You can output the compressed version with:
+
+<pre>
+<code>
+sass sass/textile-reference.scss textile-reference/stylesheets/textile-reference.css -t compressed
+</code>
+</pre>
+
+If you're developing, you can use Sass' @--watch@ option.
 
 h2. How To Use
 
