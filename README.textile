@@ -15,6 +15,7 @@ h3. JavaScript
 The guide uses JavaScript to toggle the different categories. If the browser's JavaScript is disabled, every category will be shown expanded, which is fine.
 
 h3. Sass
+
 Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.css@. You can output the compressed version with:
 
 <pre>
