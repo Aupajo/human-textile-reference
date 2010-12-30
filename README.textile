@@ -10,9 +10,15 @@ It's perfect for including as a pop-up help window next to your textarea.
 
 h2. Notes
 
+h3. Size
+
+It's extremely lightweight; one HTML file, one minified CSS file, two images. If your web server has GZip compression switched on it should total 2.2KB.
+
 h3. JavaScript
 
 The guide uses JavaScript to toggle the different categories. If the browser's JavaScript is disabled, every category will be shown expanded, which is fine.
+
+It uses jQuery 1.4.4 from the Google's AJAX CDN (the request should be a cache hit, so you'll incur no extra wait time).
 
 h3. Sass
 
