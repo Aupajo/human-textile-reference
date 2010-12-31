@@ -39,6 +39,17 @@ h3. Rails Snippet
 </code>
 </pre>
 
+h2. Reference Sections
+
+The reference sections include:
+
+* Text formatting
+* Links and images
+* Headings
+* Lists
+* Tables
+* Special characters
+
 h2. Notes
 
 h3. Licence
