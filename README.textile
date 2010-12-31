@@ -8,33 +8,13 @@ You can view a demo on the "labs page":http://labs.metanation.com/human-textile-
 
 It's perfect for including as a pop-up help window next to your textarea.
 
-h2. Notes
+The author of this reference recommends using Markdown over Textile as it's easier to learn and requires less change to normal writing styles.
 
-h3. Size
-
-It's extremely lightweight; one HTML file, one minified CSS file, two images. If your web server has GZip compression switched on it should total 2.2KB.
-
-h3. JavaScript
-
-The guide uses JavaScript to toggle the different categories. If the browser's JavaScript is disabled, every category will be shown expanded, which is fine.
-
-It uses jQuery 1.4.4 from the Google's AJAX CDN (the request should be a cache hit, so you'll incur no extra wait time).
-
-h3. Sass
-
-Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.css@. You can output the compressed version with:
-
-<pre>
-<code>
-sass sass/textile-reference.scss textile-reference/stylesheets/textile-reference.css -t compressed
-</code>
-</pre>
-
-If you're developing, you can use Sass' @--watch@ option.
+See also: the [Human Markdown Reference](http://github.com/Aupajo/human-markdown-reference).
 
 h2. How To Use
 
-Clone the repository or "download":http://github.com/Aupajo/human-textile-reference/downloads.
+"Download":http://github.com/Aupajo/human-textile-reference/downloads or clone this repository.
 
 Copy the @textile-reference/@ directory to your project.
 
@@ -58,3 +38,31 @@ h3. Rails Snippet
   <%= link_to 'Textile', 'textile-reference/index.html', :popup => ['textile_reference', 'height=400,width=600,scrollbars=1'] %>
 </code>
 </pre>
+
+h2. Notes
+
+h3. Licence
+
+The Human Textile Reference is licensed under the [MIT licence](https://github.com/Aupajo/human-textile-reference/blob/master/LICENCE) and is freely available for you to use or modify for any project.
+
+h3. Size
+
+It's extremely lightweight; one HTML file, one minified CSS file, two images. If your web server has GZip compression switched on it should total 2.2KB.
+
+h3. JavaScript
+
+The guide uses JavaScript to toggle the different categories. If the browser's JavaScript is disabled, every category will be shown expanded, which is fine.
+
+It uses jQuery 1.4.4 from the Google's AJAX CDN (the request should be a cache hit, so you'll incur no extra wait time).
+
+h3. Sass
+
+Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.css@. You can output the compressed version with:
+
+<pre>
+<code>
+sass sass/textile-reference.scss textile-reference/stylesheets/textile-reference.css -t compressed
+</code>
+</pre>
+
+If you're developing, you can use Sass' @--watch@ option.
