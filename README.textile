@@ -4,7 +4,7 @@ The Human Textile Reference is a set of short, easy to understand HTML pages you
 
 *Important:* This is not designed to be a complete reference. Just a quick guide for the layman.
 
-You can view a demo on the "labs page":http://labs.metanation.com/human-textile-reference/.
+You can "view a live demo":http://labs.metanation.com/human-textile-reference/.
 
 It's perfect for including as a pop-up help window next to your textarea.
 
