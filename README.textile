@@ -10,7 +10,7 @@ It's perfect for including as a pop-up help window next to your textarea.
 
 The author of this reference recommends using Markdown over Textile as it's easier to learn and requires less change to normal writing styles.
 
-See also: the [Human Markdown Reference](http://github.com/Aupajo/human-markdown-reference).
+See also: the "Human Markdown Reference":http://github.com/Aupajo/human-markdown-reference.
 
 h2. How To Use
 
@@ -54,7 +54,7 @@ h2. Notes
 
 h3. Licence
 
-The Human Textile Reference is licensed under the [MIT licence](https://github.com/Aupajo/human-textile-reference/blob/master/LICENCE) and is freely available for you to use or modify for any project.
+The Human Textile Reference is licensed under the "MIT licence":https://github.com/Aupajo/human-textile-reference/blob/master/LICENCE and is freely available for you to use or modify for any project.
 
 h3. Size
 
