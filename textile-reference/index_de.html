@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head>
+    <title>Textile Guide</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/textile-reference.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).ready(function() {
+        $('.section-name').each(function(i) {
+          if(i > 0){
+            toggleSection(i);
+          }
+  
+          $(this).click(function() {
+            toggleSection(i);
+          });
+        });
+      });
+
+      function toggleSection(i) {
+        $('.section').slice(i, i + 1).toggle();
+        $('.section-name').slice(i, i + 1).toggleClass('deselected');
+      }
+    </script>
+  </head>
+  <body>
+    
+    <h1 id="title">Textile Hilfe</h1>
+    
+    <h2 class="section-name">Text</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Ausgabe</th>
+        </tr>
+        <tr>
+          <td>Dieser Text ist *fett*.</td>
+          <td>Dieser Text ist <strong>fett</strong>.</td>
+        </tr>
+        <tr class="alternate">
+          <td>Dieser Text ist _betont_.</td>
+          <td>Dieser Text ist <em>betont<em>.</td>
+        </tr>
+        <tr>
+          <td>Ich glaube +nicht+.</td>
+          <td>Ich glaube <ins>nicht</ins>.</td>
+        </tr>
+        <tr class="alternate">
+          <td>Ich mag das -Blaue- Rote.</td>
+          <td>Ich mag das <del>Blaue</del> Rote.</td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Links und Bilder</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <td>Link zu "Google":http://google.com.</td>
+          <td>Link zu <a href="http://google.com" target="_blank">Google</a>.</td>
+        </tr>
+        <tr class="alternate">
+          <td>Sie sollten "mir schreiben":mailto:jane@example.com.</td>
+          <td>Sie sollten <a href="mailto:jane@example.com">mir schreiben</a>.</td>
+        </tr>
+        <tr>
+          <td>!http://www.37signals.com/images/logo-37signals.png!</td>
+          <td><img src="http://www.37signals.com/images/logo-37signals.png" alt="" /></td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Überschriften</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <td>h1. Große Überschrift</td>
+          <td><h1>Große Überschrift</h1></td>
+        </tr>
+        <tr class="alternate">
+          <td>h2. Mittlere Überschrift</td>
+          <td><h2>Mittlere Überschrift</h2></td>
+        </tr>
+        <tr>
+          <td>h3. Kleinere Überschrift</td>
+          <td><h3>Kleinere Überschrift</h3></td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Listen</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Ausgabe</th>
+        </tr>
+        <tr>
+          <td>
+            * Milch<br />
+            * Brot<br />
+            * Käse<br />
+            ** Emmentaler<br />
+            ** Gouda<br />
+            * Reis
+          </td>
+          <td>
+            <ul>
+              <li>Milch</li>
+              <li>Brot</li>
+              <li>Käse
+                <ul>
+                  <li>Emmentaler</li>
+                  <li>Gouda</li>
+                </ul>
+              </li>
+              <li>Reis</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="alternate">
+          <td>
+            # Milch<br />
+            # Brot<br />
+            # Käse<br />
+            ## Emmentaler<br />
+            ## Gouda<br />
+            # Reis
+          </td>
+          <td>
+            <ol>
+              <li>Milch</li>
+              <li>Brot</li>
+              <li>Käse
+                <ol>
+                  <li>Emmentaler</li>
+                  <li>Gouda</li>
+                </ol>
+              </li>
+              <li>Reis</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Tabellen</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Ausgabe</th>
+        </tr>
+        <tr>
+          <td>
+            | Georg | 23 | männlich |<br />
+            | Linda | 19 | weiblich |
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>Georg</td>
+                <td>23</td>
+                <td>männlich</td>
+              </tr>
+              <tr>
+                <td>Linda</td>
+                <td>19</td>
+                <td>weiblich</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="alternate">
+          <td>
+            |_. Name |_. Alter |_. Geschlecht |<br />
+            | Georg | 23 | männlich |<br />
+            | Linda | 19 | weiblich |
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Alter</th>
+                <th>Geschlecht</th>
+              </tr>
+              <tr>
+                <td>Georg</td>
+                <td>23</td>
+                <td>männlich</td>
+              </tr>
+              <tr>
+                <td>Linda</td>
+                <td>19</td>
+                <td>weiblich</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <h2 class="section-name">Sonderzeichen</h2>
+    
+    <div class="section">
+      <table>
+        <tr>
+          <th>Textile</th>
+          <th>Ausgabe</th>
+        </tr>
+        <tr>
+          <td>RoboCorp(TM)</td>
+          <td>RoboCorp&#8482;</td>
+        </tr>
+        <tr class="alternate">
+          <td>Coca-Cola(R)</td>
+          <td>Coca-Cola&#174;</td>
+        </tr>
+        <tr>
+          <td>Genial(C)</td>
+          <td>Genial&#169;</td>
+        </tr>
+      </table>
+    </div>
+    
+  </body>
+</html>
