@@ -43,7 +43,7 @@ h3. Language Support
 
 *English* and *German* are currently supported.
 
-Just change `textile-reference/*en*/index.html` to `textile-reference/*de*/index.html` (on most servers you can also drop the `index.html`).
+Just change @textile-reference/*en*/index.html@ to @textile-reference/*de*/index.html@ (on most servers you can also drop the `index.html`).
 
 h2. Reference Sections
 
