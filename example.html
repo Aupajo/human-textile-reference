@@ -37,6 +37,8 @@
         
         code {
           font: 0.9em Monaco, Courier, monospace;
+          background-color: #eef;
+          padding: 0.2em;
         }
         
         .example {
@@ -45,11 +47,6 @@
           display: block;
           padding: 1em;
           margin-bottom: 2em;
-        }
-        
-        .directory {
-          background-color: #eef;
-          padding: 0.2em;
         }
         
         .tag {
@@ -97,7 +94,7 @@
     <h2>Example</h2>
     
     <div class="example">
-      You can format your text using <a href="textile-reference/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1');return false;">Textile</a>.
+      You can format your text using <a href="textile-reference/en/index.html" onclick="window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1');return false;">Textile</a>.
     </div>
     
     <h2>Code Snippets</h2>
@@ -107,7 +104,7 @@
     <code class="example">
       You can format your text using<br />
       <span class="tag">&lt;a
-        <span class="attribute">href=</span><span class="value">"textile-reference/index.html"</span>
+        <span class="attribute">href=</span><span class="value">"textile-reference/en/index.html"</span>
         <span class="attribute">onclick=</span><span class="value">"window.open(this.href,'textile_reference','height=400,width=600,scrollbars=1'); return false;"&gt;</span></span><span class="contents">Textile</span><span class="tag">&lt;/a&gt;</span>.
     </code>
     
@@ -116,12 +113,21 @@
     <code class="example">
       You can format your text using<br />
       <span class="tag">&lt;%= link_to <span class="attribute">'Textile'</span>,
-      <span class="attribute">'textile-reference/index.html'</span>,
+      <span class="attribute">'textile-reference/en/index.html'</span>,
       <span class="attribute">:popup =&gt;</span>
       [<span class="value">'textile_reference'</span>,
       <span class="value">'height=400,width=600,scrollbars=1'</span>]
       %&gt;</span>
     </code>
+    
+    <h3>Language Support</h3>
+    
+    <p>
+      The reference includes support for <strong>English</strong> and <strong>German</strong>.
+      Just change
+      <code>textile-reference/<strong>en</strong>/index.html</code> to 
+      <code>textile-reference/<strong>de</strong>/index.html</code> (on most servers you also can drop the <code>index.html</code> part).
+    </p>
     
     <p id="shameless">
       Want to help out? Check out the <a href="http://github.com/Aupajo/human-textile-reference/tree/master">repository on GitHub</a>!
