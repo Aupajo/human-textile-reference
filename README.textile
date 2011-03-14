@@ -74,7 +74,7 @@ It uses jQuery 1.4.4 from the Google's AJAX CDN (the request should be a cache h
 
 h3. Sass
 
-Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.css@. You can output the compressed version with:
+Included stylesheet is compiled using "Sass":http://sass-lang.com/. If you want to make modifications, alter @sass/textile-reference.scss@. You can output the compressed version with:
 
 <pre>
 <code>
